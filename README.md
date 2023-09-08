@@ -36,6 +36,7 @@ P(S,t) = K e^{-r(T-t)} N(-d2) - S N(-d1)
 where:
 - `N(.)` is the cumulative distribution function of the standard normal distribution.
 - `d1` and `d2` are given by:
+
 d1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma \sqrt{T-t}}
 d2 = d1 - \sigma \sqrt{T-t}
 
