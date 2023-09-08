@@ -14,7 +14,7 @@ This repository contains an object-oriented implementation of the Black-Scholes 
 
 The Geometric Brownian Motion (GBM) is a stochastic process used to model stock prices in the Black-Scholes model. The GBM is given by:
 
-[4C3554E7-87A6-4508-A33E-A9FF82B8E7B9_4_5005_c]
+dS = \mu S dt + \sigma S dW
 
 where:
 - `S` is the stock price.
@@ -27,15 +27,19 @@ where:
 The Black-Scholes model is a mathematical model used to determine the theoretical price of European-style options. The formula for the Black-Scholes model is:
 
 For Call Options:
-![Call Option Equation](Call_option_equation_image_link_here)
+C(S,t) = S N(d1) - K e^{-r(T-t)} N(d2)
+
 
 For Put Options:
-![Put Option Equation](Put_option_equation_image_link_here)
+P(S,t) = K e^{-r(T-t)} N(-d2) - S N(-d1)
+
 
 where:
 - `N(.)` is the cumulative distribution function of the standard normal distribution.
 - `d1` and `d2` are given by:
-![d1 and d2 Equations](d1_d2_equation_image_link_here)
+d1 = \frac{\ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2})(T-t)}{\sigma \sqrt{T-t}}
+d2 = d1 - \sigma \sqrt{T-t}
+
 
 ## Python Implementation (OOP Approach)
 
