@@ -1,6 +1,5 @@
 # Simple-Black-Scholes-Model
 
-Certainly! Here's a summary in a GitHub README format:
 
 ---
 
